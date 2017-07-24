@@ -26,6 +26,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         { title: "front-end", place: "tank" },
                         { title: "back-end", place: "zinc" },
                         { title: "full stack software engineer", place: "home" }];
+                    this.skills = ["node.js", "angular.js", "angular2", "Full Stack Software engineering"];
                 }
                 AppInfo.prototype.clickAge = function () {
                     this.age = "30 year";

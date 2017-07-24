@@ -19,4 +19,10 @@ place:{{job.place}}
 <hr>
 <p>{{name}}</p>
 <input [(ngModel)]="name">
+<hr>
+<ul *ngFor="#skill of skills">
+<li>
+	skill: {{skill}}
+</li>
+</ul>
 </div>

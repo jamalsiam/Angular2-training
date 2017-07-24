@@ -11,6 +11,7 @@ export class AppInfo{
 	name:string;
 	age:string;
 	jobs:any;
+	skills:string[];
 	clickAge(){
 		this.age="30 year"
 	}
@@ -24,6 +25,8 @@ export class AppInfo{
 			{title:"front-end",place:"tank"},
 			{title:"back-end",place:"zinc"},
 			{title:"full stack software engineer",place:"home"}];
+
+		this.skills=["node.js","angular.js","angular2","Full Stack Software engineering"]
 
 	}
 }
