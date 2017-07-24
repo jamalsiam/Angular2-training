@@ -22,6 +22,10 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 function AppInfo() {
                     this.name = "jamal";
                     this.age = "21";
+                    this.jobs = [
+                        { title: "front-end", place: "tank" },
+                        { title: "back-end", place: "zinc" },
+                        { title: "full stack software engineer", place: "home" }];
                 }
                 AppInfo = __decorate([
                     core_1.Component({

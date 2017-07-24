@@ -1,4 +1,11 @@
 <div class="content">
 <h1>{{name}}</h1>
 <h2>{{age}}</h2>
+<ul *ngFor="#job of jobs">
+<li>
+	title:{{job.title}}
+place:{{job.place}}
+</li>
+
+</ul>
 </div>
