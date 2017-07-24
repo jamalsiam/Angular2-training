@@ -1,8 +1,10 @@
 import {Component} from 'angular2/core';
+import {SkillInfo} from './skill.component';
 
 @Component({
 		selector:'my-info',
-		templateUrl:'views/info.component.html'
+		templateUrl:'views/info.component.html',
+		directives:[SkillInfo]
 
 
 	})
