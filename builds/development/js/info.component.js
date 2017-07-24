@@ -41,7 +41,8 @@ System.register(['angular2/core', './skill.component'], function(exports_1, cont
                     core_1.Component({
                         selector: 'my-info',
                         templateUrl: 'views/info.component.html',
-                        directives: [skill_component_1.SkillInfo]
+                        directives: [skill_component_1.SkillInfo],
+                        styleUrls: ['css/infoStyle.css', 'css/secondStyle.css']
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppInfo);

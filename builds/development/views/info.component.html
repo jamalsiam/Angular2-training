@@ -1,12 +1,14 @@
-<div class="content">
+<div class="mainclass">
 <h1>{{name}}</h1>
+</div>
+<p class="thirdClass">just to test css class="thirdClass"</p>
 <h2 (click)="clickAge()">{{age}}</h2>
 
 <input #newTitle>
 <input #newplace>
 <input type="submit" value="add" (click)="addJob(newTitle.value,newplace.value)">
 
-<ul *ngFor="#job of jobs">
+<ul class="secondClass" *ngFor="#job of jobs">
 <li>
 	title:{{job.title}}
 place:{{job.place}}
@@ -25,4 +27,4 @@ place:{{job.place}}
 <my-skill [skill]="skill" ></my-skill>
 </li>
 </ul>
-</div>
+

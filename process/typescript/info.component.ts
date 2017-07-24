@@ -4,7 +4,8 @@ import {SkillInfo} from './skill.component';
 @Component({
 		selector:'my-info',
 		templateUrl:'views/info.component.html',
-		directives:[SkillInfo]
+		directives:[SkillInfo],
+		styleUrls:['css/infoStyle.css','css/secondStyle.css']
 
 
 	})
