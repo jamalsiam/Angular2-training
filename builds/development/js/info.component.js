@@ -27,6 +27,12 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         { title: "back-end", place: "zinc" },
                         { title: "full stack software engineer", place: "home" }];
                 }
+                AppInfo.prototype.clickAge = function () {
+                    this.age = "30 year";
+                };
+                AppInfo.prototype.addJob = function (newTitle, newplace) {
+                    this.jobs.push({ title: newTitle, place: newplace });
+                };
                 AppInfo = __decorate([
                     core_1.Component({
                         selector: 'my-info',
