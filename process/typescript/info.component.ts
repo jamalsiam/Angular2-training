@@ -1,5 +1,6 @@
 import {Component} from 'angular2/core';
 import {SkillInfo} from './skill.component';
+import {classTest} from './classtest';
 
 @Component({
 		selector:'my-info',
@@ -22,8 +23,9 @@ export class AppInfo{
 		this.jobs.push({title:newTitle,place:newplace});
 	}
 	constructor(){
+		var c =new classTest("30");
 		this.name="jamal";
-		this.age="21";
+		this.age=c.getMsg()
 			this.jobs=[
 			{title:"front-end",place:"tank"},
 			{title:"back-end",place:"zinc"},
