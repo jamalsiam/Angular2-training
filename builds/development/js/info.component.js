@@ -1,4 +1,4 @@
-System.register(['angular2/core', './skill.component', './classtest'], function(exports_1, context_1) {
+System.register(['angular2/core', './skill.component', './classtest', './classTwo'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', './skill.component', './classtest'], function(
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, skill_component_1, classtest_1;
+    var core_1, skill_component_1, classtest_1, classTwo_1;
     var AppInfo;
     return {
         setters:[
@@ -22,9 +22,15 @@ System.register(['angular2/core', './skill.component', './classtest'], function(
             },
             function (classtest_1_1) {
                 classtest_1 = classtest_1_1;
+            },
+            function (classTwo_1_1) {
+                classTwo_1 = classTwo_1_1;
             }],
         execute: function() {
             AppInfo = (function () {
+                // addJob(newTitle:string,newplace:string){
+                // 	this.jobs.push({title:newTitle,place:newplace});
+                // }
                 function AppInfo() {
                     var c = new classtest_1.classTest("30");
                     this.name = "jamal";
@@ -33,13 +39,10 @@ System.register(['angular2/core', './skill.component', './classtest'], function(
                         { title: "front-end", place: "tank" },
                         { title: "back-end", place: "zinc" },
                         { title: "full stack software engineer", place: "home" }];
-                    this.skills = ["node.js", "angular.js", "angular2", "Full Stack Software engineering"];
+                    this.skills = [new classTwo_1.classTwo("A", "node.js"), new classTwo_1.classTwo("B", "agular.js"), new classTwo_1.classTwo("C", "angular2"), new classTwo_1.classTwo("D", "bla bla bla")];
                 }
                 AppInfo.prototype.clickAge = function () {
                     this.age = "30 year";
-                };
-                AppInfo.prototype.addJob = function (newTitle, newplace) {
-                    this.jobs.push({ title: newTitle, place: newplace });
                 };
                 AppInfo = __decorate([
                     core_1.Component({

@@ -24,7 +24,7 @@ place:{{job.place}}
 <hr>
 <ul *ngFor="#skill of skills">
 <li>
-<my-skill [skill]="skill" ></my-skill>
+<my-skill [skillTitle]="skill.title" [skillName]="skill.name" ></my-skill>
 </li>
 </ul>
 

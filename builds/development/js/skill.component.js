@@ -25,7 +25,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     core_1.Component({
                         selector: 'my-skill',
                         templateUrl: 'views/skill.component.html',
-                        inputs: ['skill'],
+                        inputs: ['skillTitle', 'skillName'],
                         styleUrls: ['css/thirdStyle.css']
                     }), 
                     __metadata('design:paramtypes', [])
